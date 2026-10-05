@@ -115,7 +115,7 @@ Run the core checks with `python -m unittest discover -s tests -v`. See [docs/FI
 
 ## Deploy to Railway
 
-Deploy the repository root as a Railway service. Railway detects the Python project from `requirements.txt`; `.python-version` selects Python 3.12. `railway.json` starts Streamlit on `0.0.0.0` using Railway's injected `$PORT`, configures Streamlit's health endpoint, and restarts the service after a failure. The model checkpoint must be present at `models/best.pt` in the deployed source; it is included in this project.
+Deploy the repository root as a Railway service. Railway detects the Python project from `requirements.txt`; `.python-version` selects Python 3.12. `railway.json` starts Streamlit on `0.0.0.0` using Railway's injected `$PORT`, configures Streamlit's health endpoint, and restarts the service after a failure. `railpack.json` adds the Linux shared libraries used by OpenCV. The model checkpoint must be present at `models/best.pt` in the deployed source; it is included in this project.
 
 After the first deploy, generate a public domain from the service's **Networking** settings. No secrets or database variables are required. Inference runs on CPU unless the service has a compatible CUDA GPU, and video processing can be slow on small instances. Streamlit's 300 MB upload limit is also subject to the service's available memory.
 
