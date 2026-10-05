@@ -1,6 +1,10 @@
 # Runtime dependencies for the Streamlit inference application.
-streamlit
-ultralytics
+streamlit==1.65.0
+ultralytics==8.4.172
+# Use the CPU wheels on Railway's standard CPU instances.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.14.1
+torchvision==0.29.1
 opencv-python-headless
 Pillow
 numpy

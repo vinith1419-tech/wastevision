@@ -83,8 +83,7 @@ class RecyclingDetector:
             model = YOLO(str(path))
         except Exception as exc:
             raise ModelLoadError(
-                f"Could not load {path}. Confirm that it is the Phase 3 YOLOv8n "
-                "checkpoint and that the project dependencies are installed."
+                f"Could not load {path} ({type(exc).__name__}): {exc}"
             ) from exc
         return cls(model, device=select_device(), weights_path=path)
 
