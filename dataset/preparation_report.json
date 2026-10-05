@@ -1,0 +1,121 @@
+{
+  "status": "prepared",
+  "source": "TACO official annotations.json; VGA-sized Flickr image URLs",
+  "annotation_url": "https://raw.githubusercontent.com/pedropro/TACO/master/data/annotations.json",
+  "annotation_sha256": "ac1ec605c9e1fcda767970de3457c69b4a43b62c02aca8c4c80f51d1b5ae8449",
+  "prepared_at_utc": "2026-10-04T08:18:56.146098+00:00",
+  "license_policy": "Included only images with a missing TACO license field; official TACO terms state missing image license defaults to CC BY 4.0.",
+  "excluded_license_counts": {
+    "CC": 292,
+    "ODBL (c) OpenLitterMap & Contributors": 420
+  },
+  "target_classes": [
+    "plastic",
+    "glass",
+    "paper",
+    "metal",
+    "cardboard"
+  ],
+  "seed": 42,
+  "requested_max_images": null,
+  "candidate_images": 637,
+  "downloaded_images": 637,
+  "images_after_exact_duplicate_removal": 637,
+  "exact_duplicates_removed": [],
+  "near_duplicate_groups_kept_together": [
+    [
+      37,
+      1168
+    ],
+    [
+      39,
+      827,
+      896,
+      1034
+    ],
+    [
+      69,
+      1076
+    ],
+    [
+      801,
+      1012,
+      1170
+    ],
+    [
+      804,
+      937,
+      977,
+      1040,
+      1102,
+      1139,
+      1141
+    ],
+    [
+      822,
+      828,
+      889,
+      945
+    ],
+    [
+      908,
+      1205,
+      1260,
+      1261
+    ],
+    [
+      1081,
+      1110
+    ],
+    [
+      1084,
+      1147
+    ],
+    [
+      1131,
+      1157
+    ]
+  ],
+  "split_image_counts": {
+    "train": 477,
+    "val": 96,
+    "test": 64
+  },
+  "invalid_or_out_of_bounds_source_annotations_skipped": [
+    {
+      "annotation_id": 371,
+      "image_id": 109,
+      "error": "invalid or out-of-bounds COCO bbox"
+    },
+    {
+      "annotation_id": 387,
+      "image_id": 112,
+      "error": "invalid or out-of-bounds COCO bbox"
+    },
+    {
+      "annotation_id": 707,
+      "image_id": 209,
+      "error": "invalid or out-of-bounds COCO bbox"
+    },
+    {
+      "annotation_id": 1621,
+      "image_id": 457,
+      "error": "invalid or out-of-bounds COCO bbox"
+    },
+    {
+      "annotation_id": 1777,
+      "image_id": 549,
+      "error": "invalid or out-of-bounds COCO bbox"
+    },
+    {
+      "annotation_id": 2186,
+      "image_id": 679,
+      "error": "invalid or out-of-bounds COCO bbox"
+    }
+  ],
+  "download_failures": [],
+  "image_level_grouping_available": false,
+  "limitations": [
+    "TACO metadata does not identify capture sequences; duplicate-image similarity groups were kept within one split."
+  ]
+}

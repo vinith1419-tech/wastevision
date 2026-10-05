@@ -1,0 +1,16 @@
+# Ultralytics dataset configuration for the curated Phase 2 TACO subset.
+# Images and labels are locally present; see DATASET_REPORT.md for provenance.
+path: dataset
+
+train: images/train
+val: images/val
+test: images/test
+
+nc: 5
+
+names:
+  - plastic
+  - glass
+  - paper
+  - metal
+  - cardboard

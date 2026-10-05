@@ -1,0 +1,28 @@
+# Proposed baseline only. Training has not run in the current environment.
+model: yolov8n.pt
+data: dataset/data.yaml
+epochs: 50
+imgsz: 640
+batch: auto
+patience: 10
+seed: 42
+device: auto
+workers: 2
+project: runs/detect
+name: recycling_yolov8n
+
+# Conservative YOLOv8 augmentation defaults; the test split is never augmented.
+augmentation:
+  fliplr: 0.5
+  flipud: 0.0
+  degrees: 5.0
+  translate: 0.1
+  scale: 0.3
+  shear: 0.0
+  perspective: 0.0
+  hsv_h: 0.015
+  hsv_s: 0.5
+  hsv_v: 0.3
+  mosaic: 0.5
+  mixup: 0.0
+  close_mosaic: 10

@@ -1,0 +1,692 @@
+{
+  "created_utc": "2026-10-04T14:56:26.453114+00:00",
+  "dataset_root": "dataset",
+  "data_yaml": {
+    "path": "dataset",
+    "train": "images/train",
+    "val": "images/val",
+    "test": "images/test",
+    "nc": 5,
+    "names": [
+      "plastic",
+      "glass",
+      "paper",
+      "metal",
+      "cardboard"
+    ],
+    "class_order_valid": true
+  },
+  "splits": {
+    "train": {
+      "images": 477,
+      "label_files": 477,
+      "objects": 992,
+      "objects_by_class": {
+        "plastic": 662,
+        "glass": 37,
+        "paper": 67,
+        "metal": 210,
+        "cardboard": 16
+      },
+      "image_dimensions": {
+        "count": 477,
+        "min": 273280.0,
+        "q25": 307200.0,
+        "median": 307200.0,
+        "q75": 307200.0,
+        "q90": 307200.0,
+        "q95": 307200.0,
+        "max": 409600.0
+      },
+      "unmatched_or_missing_pairs": false
+    },
+    "val": {
+      "images": 96,
+      "label_files": 96,
+      "objects": 197,
+      "objects_by_class": {
+        "plastic": 140,
+        "glass": 8,
+        "paper": 8,
+        "metal": 35,
+        "cardboard": 6
+      },
+      "image_dimensions": {
+        "count": 96,
+        "min": 273280.0,
+        "q25": 307200.0,
+        "median": 307200.0,
+        "q75": 307200.0,
+        "q90": 307200.0,
+        "q95": 307200.0,
+        "max": 409600.0
+      },
+      "unmatched_or_missing_pairs": false
+    },
+    "test": {
+      "images": 64,
+      "label_files": 64,
+      "objects": 169,
+      "objects_by_class": {
+        "plastic": 91,
+        "glass": 8,
+        "paper": 12,
+        "metal": 57,
+        "cardboard": 1
+      },
+      "image_dimensions": {
+        "count": 64,
+        "min": 247293.0,
+        "q25": 307200.0,
+        "median": 307200.0,
+        "q75": 307200.0,
+        "q90": 307200.0,
+        "q95": 307200.0,
+        "max": 316305.0
+      },
+      "unmatched_or_missing_pairs": false
+    }
+  },
+  "total_images": 637,
+  "total_objects": 1358,
+  "class_distribution": {
+    "plastic": {
+      "objects_by_split": {
+        "train": 662,
+        "val": 140,
+        "test": 91
+      },
+      "total_objects": 893,
+      "area_fraction": {
+        "count": 893,
+        "min": 2.3278368416e-05,
+        "q25": 0.0012377550368447999,
+        "median": 0.0051813009479527,
+        "q75": 0.017575246632405,
+        "q90": 0.0457923833276304,
+        "q95": 0.0942488243571052,
+        "max": 0.688728126188305
+      },
+      "width_px": {
+        "count": 893,
+        "min": 2.5490208,
+        "q25": 19.8039216,
+        "median": 42.156864,
+        "q75": 78.6274512,
+        "q90": 131.33333280000002,
+        "q95": 178.19607839999998,
+        "max": 505.06588800000003
+      },
+      "height_px": {
+        "count": 893,
+        "min": 1.1764736,
+        "q25": 17.843136,
+        "median": 37.913044799999994,
+        "q75": 71.17647360000001,
+        "q90": 123.1764710400002,
+        "q95": 177.54173439999988,
+        "max": 612.7451008
+      },
+      "area_lt_1pct_count": 579,
+      "area_lt_1pct_percent": 64.83762597984322,
+      "area_ge_50pct_count": 2,
+      "area_ge_50pct_percent": 0.22396416573348266
+    },
+    "glass": {
+      "objects_by_split": {
+        "train": 37,
+        "val": 8,
+        "test": 8
+      },
+      "total_objects": 53,
+      "area_fraction": {
+        "count": 53,
+        "min": 0.0002365375111736,
+        "q25": 0.004855404513168,
+        "median": 0.013644926724764,
+        "q75": 0.043072250424464,
+        "q90": 0.11201661256018522,
+        "q95": 0.1748624634176987,
+        "max": 0.2483000589208878
+      },
+      "width_px": {
+        "count": 53,
+        "min": 8.2352928,
+        "q25": 33.7254912,
+        "median": 60.980390400000005,
+        "q75": 115.5555584,
+        "q90": 154.70588352000007,
+        "q95": 198.53897311999995,
+        "max": 283.3333344
+      },
+      "height_px": {
+        "count": 53,
+        "min": 6.470590499999999,
+        "q25": 41.3725504,
+        "median": 75.68627520000001,
+        "q75": 133.7254912,
+        "q90": 231.13725568000007,
+        "q95": 355.16935295999986,
+        "max": 442.5243984
+      },
+      "area_lt_1pct_count": 23,
+      "area_lt_1pct_percent": 43.39622641509434,
+      "area_ge_50pct_count": 0,
+      "area_ge_50pct_percent": 0.0
+    },
+    "paper": {
+      "objects_by_split": {
+        "train": 67,
+        "val": 8,
+        "test": 12
+      },
+      "total_objects": 87,
+      "area_fraction": {
+        "count": 87,
+        "min": 0.00013516431660899999,
+        "q25": 0.00421130850817595,
+        "median": 0.0152082436144752,
+        "q75": 0.0445729518210444,
+        "q90": 0.19194931351249955,
+        "q95": 0.3251759009951401,
+        "max": 0.6130694907446654
+      },
+      "width_px": {
+        "count": 87,
+        "min": 8.039217599999999,
+        "q25": 38.524016849999995,
+        "median": 77.58006696999999,
+        "q75": 131.1764712,
+        "q90": 239.64147168000005,
+        "q95": 313.03921440000016,
+        "max": 411.176472
+      },
+      "height_px": {
+        "count": 87,
+        "min": 4.7058816,
+        "q25": 34.9019616,
+        "median": 67.7371311,
+        "q75": 114.7058816,
+        "q90": 237.54818560000007,
+        "q95": 354.84313536,
+        "max": 458.0392128
+      },
+      "area_lt_1pct_count": 38,
+      "area_lt_1pct_percent": 43.67816091954023,
+      "area_ge_50pct_count": 1,
+      "area_ge_50pct_percent": 1.1494252873563218
+    },
+    "metal": {
+      "objects_by_split": {
+        "train": 210,
+        "val": 35,
+        "test": 57
+      },
+      "total_objects": 302,
+      "area_fraction": {
+        "count": 302,
+        "min": 3.85469198946e-05,
+        "q25": 0.0014923379516463748,
+        "median": 0.0066597856685029,
+        "q75": 0.021190396641007997,
+        "q90": 0.05439324249760739,
+        "q95": 0.09349431160041634,
+        "max": 0.2908681971650325
+      },
+      "width_px": {
+        "count": 302,
+        "min": 2.156864,
+        "q25": 21.617646399999998,
+        "median": 47.352940000000004,
+        "q75": 80.39215680000001,
+        "q90": 128.9974152,
+        "q95": 152.9785284,
+        "max": 270.180576
+      },
+      "height_px": {
+        "count": 302,
+        "min": 2.745096,
+        "q25": 19.7058812,
+        "median": 42.2549016,
+        "q75": 82.6571996,
+        "q90": 139.19607680000007,
+        "q95": 191.08027224,
+        "max": 330.722184
+      },
+      "area_lt_1pct_count": 188,
+      "area_lt_1pct_percent": 62.25165562913907,
+      "area_ge_50pct_count": 0,
+      "area_ge_50pct_percent": 0.0
+    },
+    "cardboard": {
+      "objects_by_split": {
+        "train": 16,
+        "val": 6,
+        "test": 1
+      },
+      "total_objects": 23,
+      "area_fraction": {
+        "count": 23,
+        "min": 0.003067604812492,
+        "q25": 0.04650623997372805,
+        "median": 0.0749621533737024,
+        "q75": 0.11929631442208724,
+        "q90": 0.3954632835955644,
+        "q95": 0.5470800475381682,
+        "max": 0.5881429302843858
+      },
+      "width_px": {
+        "count": 23,
+        "min": 24.9019584,
+        "q25": 106.0894136,
+        "median": 147.6470592,
+        "q75": 231.07843280000003,
+        "q90": 399.0196083200001,
+        "q95": 428.52941344,
+        "max": 469.4117664
+      },
+      "height_px": {
+        "count": 23,
+        "min": 37.843136,
+        "q25": 97.6470592,
+        "median": 143.72548799999998,
+        "q75": 209.11764639999998,
+        "q90": 301.25490112000006,
+        "q95": 378.27450751999993,
+        "max": 401.1764688
+      },
+      "area_lt_1pct_count": 2,
+      "area_lt_1pct_percent": 8.695652173913043,
+      "area_ge_50pct_count": 2,
+      "area_ge_50pct_percent": 8.695652173913043
+    }
+  },
+  "bbox_distribution_overall": {
+    "area_fraction": {
+      "count": 1358,
+      "min": 2.3278368416e-05,
+      "q25": 0.0015157884264681,
+      "median": 0.0061147479472939,
+      "q75": 0.020381722129038923,
+      "q90": 0.06113661256887498,
+      "q95": 0.12075345303637072,
+      "max": 0.688728126188305
+    },
+    "area_lt_1pct_count": 830,
+    "area_lt_1pct_percent": 61.11929307805597,
+    "area_ge_50pct_count": 5,
+    "area_ge_50pct_percent": 0.36818851251840945
+  },
+  "empty_label_files": [],
+  "exact_duplicate_groups": [],
+  "near_duplicate_same_split_candidates": [
+    {
+      "files": [
+        "dataset\\images\\train\\taco_000037.jpg",
+        "dataset\\images\\train\\taco_001168.jpg"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "hamming_distance": 2
+    },
+    {
+      "files": [
+        "dataset\\images\\train\\taco_000069.jpg",
+        "dataset\\images\\train\\taco_001076.jpg"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "hamming_distance": 1
+    },
+    {
+      "files": [
+        "dataset\\images\\train\\taco_000804.jpg",
+        "dataset\\images\\train\\taco_000977.jpg"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "hamming_distance": 2
+    },
+    {
+      "files": [
+        "dataset\\images\\train\\taco_000822.jpg",
+        "dataset\\images\\train\\taco_000828.jpg"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "hamming_distance": 2
+    },
+    {
+      "files": [
+        "dataset\\images\\train\\taco_000822.jpg",
+        "dataset\\images\\train\\taco_000889.jpg"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "hamming_distance": 2
+    },
+    {
+      "files": [
+        "dataset\\images\\train\\taco_000822.jpg",
+        "dataset\\images\\train\\taco_000945.jpg"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "hamming_distance": 1
+    },
+    {
+      "files": [
+        "dataset\\images\\train\\taco_000908.jpg",
+        "dataset\\images\\train\\taco_001261.jpg"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "hamming_distance": 2
+    },
+    {
+      "files": [
+        "dataset\\images\\train\\taco_000937.jpg",
+        "dataset\\images\\train\\taco_001139.jpg"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "hamming_distance": 2
+    },
+    {
+      "files": [
+        "dataset\\images\\train\\taco_000937.jpg",
+        "dataset\\images\\train\\taco_001141.jpg"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "hamming_distance": 2
+    },
+    {
+      "files": [
+        "dataset\\images\\train\\taco_000977.jpg",
+        "dataset\\images\\train\\taco_001141.jpg"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "hamming_distance": 1
+    },
+    {
+      "files": [
+        "dataset\\images\\train\\taco_001040.jpg",
+        "dataset\\images\\train\\taco_001139.jpg"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "hamming_distance": 2
+    },
+    {
+      "files": [
+        "dataset\\images\\train\\taco_001081.jpg",
+        "dataset\\images\\train\\taco_001110.jpg"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "hamming_distance": 2
+    },
+    {
+      "files": [
+        "dataset\\images\\train\\taco_001084.jpg",
+        "dataset\\images\\train\\taco_001147.jpg"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "hamming_distance": 0
+    },
+    {
+      "files": [
+        "dataset\\images\\train\\taco_001102.jpg",
+        "dataset\\images\\train\\taco_001141.jpg"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "hamming_distance": 2
+    },
+    {
+      "files": [
+        "dataset\\images\\train\\taco_001131.jpg",
+        "dataset\\images\\train\\taco_001157.jpg"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "hamming_distance": 0
+    },
+    {
+      "files": [
+        "dataset\\images\\train\\taco_001139.jpg",
+        "dataset\\images\\train\\taco_001141.jpg"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "hamming_distance": 2
+    },
+    {
+      "files": [
+        "dataset\\images\\train\\taco_001205.jpg",
+        "dataset\\images\\train\\taco_001261.jpg"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "hamming_distance": 2
+    },
+    {
+      "files": [
+        "dataset\\images\\train\\taco_001260.jpg",
+        "dataset\\images\\train\\taco_001261.jpg"
+      ],
+      "splits": [
+        "train",
+        "train"
+      ],
+      "hamming_distance": 1
+    },
+    {
+      "files": [
+        "dataset\\images\\val\\taco_000039.jpg",
+        "dataset\\images\\val\\taco_000827.jpg"
+      ],
+      "splits": [
+        "val",
+        "val"
+      ],
+      "hamming_distance": 2
+    },
+    {
+      "files": [
+        "dataset\\images\\val\\taco_000039.jpg",
+        "dataset\\images\\val\\taco_001034.jpg"
+      ],
+      "splits": [
+        "val",
+        "val"
+      ],
+      "hamming_distance": 0
+    },
+    {
+      "files": [
+        "dataset\\images\\val\\taco_000827.jpg",
+        "dataset\\images\\val\\taco_000896.jpg"
+      ],
+      "splits": [
+        "val",
+        "val"
+      ],
+      "hamming_distance": 2
+    },
+    {
+      "files": [
+        "dataset\\images\\val\\taco_000827.jpg",
+        "dataset\\images\\val\\taco_001034.jpg"
+      ],
+      "splits": [
+        "val",
+        "val"
+      ],
+      "hamming_distance": 2
+    },
+    {
+      "files": [
+        "dataset\\images\\test\\taco_000801.jpg",
+        "dataset\\images\\test\\taco_001170.jpg"
+      ],
+      "splits": [
+        "test",
+        "test"
+      ],
+      "hamming_distance": 1
+    },
+    {
+      "files": [
+        "dataset\\images\\test\\taco_001012.jpg",
+        "dataset\\images\\test\\taco_001170.jpg"
+      ],
+      "splits": [
+        "test",
+        "test"
+      ],
+      "hamming_distance": 2
+    }
+  ],
+  "near_duplicate_cross_split_candidates": [],
+  "split_name_collisions": [],
+  "source_preparation": {
+    "source": "TACO official annotations.json; VGA-sized Flickr image URLs",
+    "license_policy": "Included only images with a missing TACO license field; official TACO terms state missing image license defaults to CC BY 4.0.",
+    "skipped_out_of_bounds_source_annotations": [
+      {
+        "annotation_id": 371,
+        "image_id": 109,
+        "error": "invalid or out-of-bounds COCO bbox"
+      },
+      {
+        "annotation_id": 387,
+        "image_id": 112,
+        "error": "invalid or out-of-bounds COCO bbox"
+      },
+      {
+        "annotation_id": 707,
+        "image_id": 209,
+        "error": "invalid or out-of-bounds COCO bbox"
+      },
+      {
+        "annotation_id": 1621,
+        "image_id": 457,
+        "error": "invalid or out-of-bounds COCO bbox"
+      },
+      {
+        "annotation_id": 1777,
+        "image_id": 549,
+        "error": "invalid or out-of-bounds COCO bbox"
+      },
+      {
+        "annotation_id": 2186,
+        "image_id": 679,
+        "error": "invalid or out-of-bounds COCO bbox"
+      }
+    ],
+    "near_duplicate_groups_kept_together": [
+      [
+        37,
+        1168
+      ],
+      [
+        39,
+        827,
+        896,
+        1034
+      ],
+      [
+        69,
+        1076
+      ],
+      [
+        801,
+        1012,
+        1170
+      ],
+      [
+        804,
+        937,
+        977,
+        1040,
+        1102,
+        1139,
+        1141
+      ],
+      [
+        822,
+        828,
+        889,
+        945
+      ],
+      [
+        908,
+        1205,
+        1260,
+        1261
+      ],
+      [
+        1081,
+        1110
+      ],
+      [
+        1084,
+        1147
+      ],
+      [
+        1131,
+        1157
+      ]
+    ],
+    "image_level_grouping_available": false
+  },
+  "prior_validator": {
+    "status": "passed",
+    "errors": [],
+    "warnings": []
+  },
+  "errors": [],
+  "warnings": [],
+  "annotation_mistake_review": {
+    "status": "not visually adjudicated by this automated audit",
+    "note": "Geometry, pairing, labels and scale distributions are machine-checked. Semantic correctness (wrong class, omitted object, inaccurate box) requires human review of image-label overlays; no such labels were silently changed."
+  }
+}

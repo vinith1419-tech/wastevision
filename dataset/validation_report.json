@@ -1,0 +1,295 @@
+{
+  "status": "passed",
+  "dataset_root": "dataset",
+  "target_classes": [
+    {
+      "id": 0,
+      "name": "plastic"
+    },
+    {
+      "id": 1,
+      "name": "glass"
+    },
+    {
+      "id": 2,
+      "name": "paper"
+    },
+    {
+      "id": 3,
+      "name": "metal"
+    },
+    {
+      "id": 4,
+      "name": "cardboard"
+    }
+  ],
+  "data_yaml_valid": true,
+  "split_statistics": {
+    "train": {
+      "images": 477,
+      "annotated_objects": 992,
+      "objects_per_class": {
+        "plastic": 662,
+        "glass": 37,
+        "paper": 67,
+        "metal": 210,
+        "cardboard": 16
+      },
+      "invalid_images": 0,
+      "label_files": 477
+    },
+    "val": {
+      "images": 96,
+      "annotated_objects": 197,
+      "objects_per_class": {
+        "plastic": 140,
+        "glass": 8,
+        "paper": 8,
+        "metal": 35,
+        "cardboard": 6
+      },
+      "invalid_images": 0,
+      "label_files": 96
+    },
+    "test": {
+      "images": 64,
+      "annotated_objects": 169,
+      "objects_per_class": {
+        "plastic": 91,
+        "glass": 8,
+        "paper": 12,
+        "metal": 57,
+        "cardboard": 1
+      },
+      "invalid_images": 0,
+      "label_files": 64
+    }
+  },
+  "overall": {
+    "images": 637,
+    "annotated_objects": 1358,
+    "objects_per_class": {
+      "plastic": 893,
+      "glass": 53,
+      "paper": 87,
+      "metal": 302,
+      "cardboard": 23
+    }
+  },
+  "image_quality": {
+    "formats": {
+      "JPEG": 637
+    },
+    "minimum_dimensions": {
+      "width": 434,
+      "height": 387
+    },
+    "maximum_dimensions": {
+      "width": 640,
+      "height": 640
+    },
+    "total_bytes": 86893763
+  },
+  "class_distribution": {
+    "plastic": {
+      "class_id": 0,
+      "objects_per_split": {
+        "train": 662,
+        "val": 140,
+        "test": 91
+      },
+      "percentage_per_split": {
+        "train": 66.7339,
+        "val": 71.066,
+        "test": 53.8462
+      },
+      "total_objects": 893,
+      "overall_percentage": 65.7585
+    },
+    "glass": {
+      "class_id": 1,
+      "objects_per_split": {
+        "train": 37,
+        "val": 8,
+        "test": 8
+      },
+      "percentage_per_split": {
+        "train": 3.7298,
+        "val": 4.0609,
+        "test": 4.7337
+      },
+      "total_objects": 53,
+      "overall_percentage": 3.9028
+    },
+    "paper": {
+      "class_id": 2,
+      "objects_per_split": {
+        "train": 67,
+        "val": 8,
+        "test": 12
+      },
+      "percentage_per_split": {
+        "train": 6.754,
+        "val": 4.0609,
+        "test": 7.1006
+      },
+      "total_objects": 87,
+      "overall_percentage": 6.4065
+    },
+    "metal": {
+      "class_id": 3,
+      "objects_per_split": {
+        "train": 210,
+        "val": 35,
+        "test": 57
+      },
+      "percentage_per_split": {
+        "train": 21.1694,
+        "val": 17.7665,
+        "test": 33.7278
+      },
+      "total_objects": 302,
+      "overall_percentage": 22.2386
+    },
+    "cardboard": {
+      "class_id": 4,
+      "objects_per_split": {
+        "train": 16,
+        "val": 6,
+        "test": 1
+      },
+      "percentage_per_split": {
+        "train": 1.6129,
+        "val": 3.0457,
+        "test": 0.5917
+      },
+      "total_objects": 23,
+      "overall_percentage": 1.6937
+    }
+  },
+  "exact_duplicate_groups": [],
+  "near_duplicate_cross_split_candidates": [],
+  "preparation_summary": {
+    "status": "prepared",
+    "source": "TACO official annotations.json; VGA-sized Flickr image URLs",
+    "annotation_url": "https://raw.githubusercontent.com/pedropro/TACO/master/data/annotations.json",
+    "annotation_sha256": "ac1ec605c9e1fcda767970de3457c69b4a43b62c02aca8c4c80f51d1b5ae8449",
+    "prepared_at_utc": "2026-10-04T08:18:56.146098+00:00",
+    "license_policy": "Included only images with a missing TACO license field; official TACO terms state missing image license defaults to CC BY 4.0.",
+    "excluded_license_counts": {
+      "CC": 292,
+      "ODBL (c) OpenLitterMap & Contributors": 420
+    },
+    "target_classes": [
+      "plastic",
+      "glass",
+      "paper",
+      "metal",
+      "cardboard"
+    ],
+    "seed": 42,
+    "requested_max_images": null,
+    "candidate_images": 637,
+    "downloaded_images": 637,
+    "images_after_exact_duplicate_removal": 637,
+    "exact_duplicates_removed": [],
+    "near_duplicate_groups_kept_together": [
+      [
+        37,
+        1168
+      ],
+      [
+        39,
+        827,
+        896,
+        1034
+      ],
+      [
+        69,
+        1076
+      ],
+      [
+        801,
+        1012,
+        1170
+      ],
+      [
+        804,
+        937,
+        977,
+        1040,
+        1102,
+        1139,
+        1141
+      ],
+      [
+        822,
+        828,
+        889,
+        945
+      ],
+      [
+        908,
+        1205,
+        1260,
+        1261
+      ],
+      [
+        1081,
+        1110
+      ],
+      [
+        1084,
+        1147
+      ],
+      [
+        1131,
+        1157
+      ]
+    ],
+    "split_image_counts": {
+      "train": 477,
+      "val": 96,
+      "test": 64
+    },
+    "invalid_or_out_of_bounds_source_annotations_skipped": [
+      {
+        "annotation_id": 371,
+        "image_id": 109,
+        "error": "invalid or out-of-bounds COCO bbox"
+      },
+      {
+        "annotation_id": 387,
+        "image_id": 112,
+        "error": "invalid or out-of-bounds COCO bbox"
+      },
+      {
+        "annotation_id": 707,
+        "image_id": 209,
+        "error": "invalid or out-of-bounds COCO bbox"
+      },
+      {
+        "annotation_id": 1621,
+        "image_id": 457,
+        "error": "invalid or out-of-bounds COCO bbox"
+      },
+      {
+        "annotation_id": 1777,
+        "image_id": 549,
+        "error": "invalid or out-of-bounds COCO bbox"
+      },
+      {
+        "annotation_id": 2186,
+        "image_id": 679,
+        "error": "invalid or out-of-bounds COCO bbox"
+      }
+    ],
+    "download_failures": [],
+    "image_level_grouping_available": false,
+    "limitations": [
+      "TACO metadata does not identify capture sequences; duplicate-image similarity groups were kept within one split."
+    ]
+  },
+  "errors": [],
+  "warnings": []
+}

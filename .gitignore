@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+.venv/
+venv/
+env/
+
+# Local configuration and secrets
+.env
+.streamlit/secrets.toml
+
+# Model weights and generated artifacts
+model/*.pt
+model/*.onnx
+models/*.pt
+!models/best.pt
+models/*.pth
+models/*.onnx
+*.pth
+*.onnx
+runs/
+outputs/
+results/detections/*
+results/metrics/*
+results/annotation_review/*
+!results/detections/.gitkeep
+!results/metrics/.gitkeep
+!results/annotation_review/.gitkeep
+
+# Dataset content (keep directory placeholders and configuration)
+dataset/images/train/*
+dataset/images/val/*
+dataset/images/test/*
+dataset/labels/train/*
+dataset/labels/val/*
+dataset/labels/test/*
+dataset/hard_test/images/*
+!dataset/hard_test/images/.gitkeep
+dataset/hard_test/labels/*
+!dataset/hard_test/labels/.gitkeep
+
+# Downloaded datasets / archives
+dataset/raw/
+*.zip
+
+# Editor / operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
